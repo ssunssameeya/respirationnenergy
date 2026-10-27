@@ -2,9 +2,9 @@
    측정값은 답 'run'에 JSON으로 저장하고, 교사 페이지 "달리기 통계"에서 반 평균을 냅니다. */
 (function () {
   var MS = [
-    { k: 't', name: 's2_temp', step: '0.1', lo: 35, hi: 40 },                 // lo~hi: 생리적으로 가능한 범위 (teacher.js 통계와 같게)
-    { k: 'h', name: 's2_heart', step: '1', lo: 40, hi: 200 },
-    { k: 'b', name: 's2_breath', step: '1', lo: 8, hi: 60 }
+    { k: 't', name: 's2_temp', step: '0.1', lo: 30, hi: 45 },                 // lo~hi: 생리적으로 가능한 범위 (teacher.js 통계와 같게)
+    { k: 'h', name: 's2_heart', step: '1', lo: 20, hi: 300 },
+    { k: 'b', name: 's2_breath', step: '1', lo: 4, hi: 200 }
   ];
   function getRun() { try { return JSON.parse((App.me && App.me.ans && App.me.ans['s2.run']) || '{}'); } catch (e) { return {}; } }
 
