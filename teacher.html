@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>교사 페이지 · 튼튼맨 되기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700;900&family=Silkscreen&display=swap">
+<link rel="stylesheet" href="css/style.css?v=20261027a">
+<style>
+#app{min-height:100vh}
+#app>.login-card{margin:60px auto}
+.tpane{display:grid;gap:14px;max-width:1500px}
+.scroll{overflow-x:auto;border:2px solid var(--ink);border-radius:12px;background:#fff}
+.ttable{font-size:14px;min-width:760px}.ttable th,.ttable td{border-width:1px;padding:6px 8px}
+td.pc>*{display:block;margin:2px auto}
+.st-locked{background:#f1f1f1;color:#777}.st-open{background:#fff6cc}.st-done{background:#d9f3dd}
+.tsel,.tinput{border:2px solid var(--ink);border-radius:10px;padding:8px 10px;font-size:16px;background:#fff}.tinput{flex:1;min-width:220px}
+.tcb{width:24px;height:24px}
+.givebtn{font-size:17px}.givebtn.good{background:#d9f3dd}.givebtn.bad{background:#fde4e0}
+.runcharts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0}.runsvg{width:100%;height:auto;display:block}@media (max-width:700px){.runcharts{grid-template-columns:1fr}}
+.ntext{min-height:90px;width:100%}.ttable input.tinput{min-width:340px;width:100%}.chk{display:inline-flex;gap:4px;align-items:center;font-weight:700}.nlist{display:grid;gap:10px}.ncard{border:2px solid var(--line);border-radius:12px;padding:10px;display:grid;gap:6px;background:#fff}.nbody{white-space:pre-line;margin:0}.ncard a{word-break:break-all}
+.okc{background:#d9f3dd;font-weight:900;color:var(--good)}
+.anscell{text-align:start!important}.anscell p{margin:2px 0}
+td.mini canvas{height:52px;width:auto;margin:auto}
+.tabs button{font-size:15px;padding:6px 14px}
+.drawgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.drawcard{background:#fff;border:2px solid var(--ink);border-radius:14px;padding:10px;display:grid;gap:6px}
+.drawcard.wait{border-style:dashed;background:#fffbe8}
+.drawcard canvas{image-rendering:pixelated;border:1px solid var(--line)}
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script src="js/config.js?v=20261027a"></script>
+<script src="lang/ko.js?v=20261027a"></script>
+<script src="js/core.js?v=20261027a"></script>
+<script src="js/api.js?v=20261027a"></script>
+<script src="js/ui.js?v=20261027a"></script>
+<script src="js/pixel.js?v=20261027a"></script>
+<script src="js/teacher.js?v=20261027a"></script>
+</body>
+</html>
