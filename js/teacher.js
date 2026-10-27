@@ -124,7 +124,7 @@
     },
     /* 1분 달리기 통계: ① 생리적 범위 밖 값 제외 → ② 남은 값에서 평균±2표준편차 밖 값 제외 → 반 평균 */
     run: function (p) {
-      var MS = [{ k: 't', n: '체온', u: '°C', lo: 35, hi: 40, d: 2 }, { k: 'h', n: '심박수', u: '회/분', lo: 40, hi: 200, d: 1 }, { k: 'b', n: '호흡수', u: '회/분', lo: 8, hi: 60, d: 1 }];   // 범위는 js/acts/s2.js와 같게
+      var MS = [{ k: 't', n: '체온', u: '°C', lo: 30, hi: 45, d: 2 }, { k: 'h', n: '심박수', u: '회/분', lo: 20, hi: 300, d: 1 }, { k: 'b', n: '호흡수', u: '회/분', lo: 4, hi: 200, d: 1 }];   // 범위는 js/acts/s2.js와 같게
       var list = inCls(), out = [], res = {}, sent = 0;
       var vals = {}; MS.forEach(function (m) { ['0', '1'].forEach(function (w) { vals[m.k + w] = []; }); });
       list.forEach(function (s) {
